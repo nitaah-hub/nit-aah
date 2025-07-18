@@ -1,0 +1,83 @@
+body {
+  background: radial-gradient(circle at top left, #ffe4e1, #fff0f5);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.questionnaire {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #fff0f5, #fce4ec);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.4);
+  animation: fadeIn 1.5s ease;
+}
+
+.questionnaire h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #ff1493;
+  margin-bottom: 20px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.questionnaire label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #8b008b;
+}
+
+.checkbox-group label {
+  display: block;
+  margin: 5px 0;
+  font-weight: normal;
+}
+
+.questionnaire input[type="text"],
+.questionnaire textarea,
+.questionnaire select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ffb6c1;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 16px;
+  transition: box-shadow 0.3s ease;
+}
+
+.questionnaire input[type="text"]:focus,
+.questionnaire textarea:focus,
+.questionnaire select:focus {
+  box-shadow: 0 0 10px #ff69b4;
+  outline: none;
+}
+
+.questionnaire input[type="checkbox"],
+.questionnaire input[type="radio"] {
+  margin-right: 8px;
+  transform: scale(1.2);
+}
+
+.questionnaire button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 24px;
+  background-color: #ff69b4;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px #ff69b4;
+}
+
+.questionnaire button:hover {
+  background-color: #ff1493;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
