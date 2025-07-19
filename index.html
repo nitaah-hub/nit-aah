@@ -6,107 +6,91 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<form action="https://formspree.io/f/manbngow" method="POST">
-  <h2>Send Your Response to Nitaah💖</h2>
+<section class="questionnaire">
+  <h2>💘 Love App User Requirements Questionnaire</h2>
+  <form action="https://formspree.io/f/manbngow" method="POST" id="loveAppForm">
 
-  <label for="name">Your Name:</label><br>
-  <input type="text" id="name" name="name" value="Nitaah" required><br><br>
+    <!-- 🧠 User Intentions -->
+    <label>What are you looking for in this app?</label>
+    <select name="intent" required>
+      <option>💬 Chatting and bonding</option>
+      <option>💞 Finding romantic connections</option>
+      <option>🎨 Sharing creative love expressions</option>
+      <option>📖 Reading or writing love stories</option>
+    </select>
 
-  <label for="email">Your Email:</label><br>
-  <input type="email" id="email" name="email" value="annenitaah@gmail.com" required><br><br>
+    <label>What kind of relationship are you interested in?</label>
+    <select name="relationship" required>
+      <option>Casual</option>
+      <option>Serious</option>
+      <option>Friendship</option>
+      <option>Exploring</option>
+    </select>
 
-  <label for="message">Your Message to Kamila:</label><br>
-  <textarea id="message" name="message" rows="5" placeholder="Type your heartfelt message here..." required></textarea><br><br>
+    <!-- 🎨 Feature Preferences -->
+    <label>Which features would you love to see?</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="features" value="🌸 Animated flowers and glowing lights"> 🌸 Animated flowers and glowing lights</label>
+      <label><input type="checkbox" name="features" value="🎶 Background music or love playlists"> 🎶 Background music or love playlists</label>
+      <label><input type="checkbox" name="features" value="💌 Personalized love notes or messages"> 💌 Personalized love notes or messages</label>
+      <label><input type="checkbox" name="features" value="🧠 Compatibility quizzes"> 🧠 Compatibility quizzes</label>
+      <label><input type="checkbox" name="features" value="📷 Photo sharing or memory albums"> 📷 Photo sharing or memory albums</label>
+      <label><input type="checkbox" name="features" value="🕊️ Virtual gifts or gestures"> 🕊️ Virtual gifts or gestures</label>
+    </div>
 
-  <button type="submit">💌 Send Message</button>
-</form>
+    <label>How important is customization?</label>
+    <select name="customization" required>
+      <option>Not important</option>
+      <option>Somewhat important</option>
+      <option>Very important</option>
+    </select>
 
-  <section class="questionnaire">
-    <h2>💘 Love App User Requirements Questionnaire</h2>
-    <form id="loveAppForm">
+    <!-- 🔐 Privacy & Safety -->
+    <label>How comfortable are you sharing personal feelings?</label>
+    <select name="comfort" required>
+      <option>Very comfortable</option>
+      <option>Somewhat comfortable</option>
+      <option>Not comfortable</option>
+    </select>
 
-      <!-- 🧠 User Intentions -->
-      <label>What are you looking for in this app?</label>
-      <select name="intent">
-        <option>💬 Chatting and bonding</option>
-        <option>💞 Finding romantic connections</option>
-        <option>🎨 Sharing creative love expressions</option>
-        <option>📖 Reading or writing love stories</option>
-      </select>
+    <label>Would you prefer your profile and messages to be:</label>
+    <select name="visibility" required>
+      <option>Public</option>
+      <option>Private</option>
+      <option>Visible only to selected users</option>
+    </select>
 
-      <label>What kind of relationship are you interested in?</label>
-      <select name="relationship">
-        <option>Casual</option>
-        <option>Serious</option>
-        <option>Friendship</option>
-        <option>Exploring</option>
-      </select>
+    <!-- 🪄 Expression & Usage -->
+    <label>What’s your favorite way to express love?</label>
+    <select name="expression" required>
+      <option>Text messages</option>
+      <option>Voice notes</option>
+      <option>Visual art or animations</option>
+      <option>Music or poetry</option>
+    </select>
 
-      <!-- 🎨 Feature Preferences -->
-      <label>Which features would you love to see?</label>
-      <div class="checkbox-group">
-        <label><input type="checkbox" name="features" value="🌸 Animated flowers and glowing lights"> 🌸 Animated flowers and glowing lights</label>
-        <label><input type="checkbox" name="features" value="🎶 Background music or love playlists"> 🎶 Background music or love playlists</label>
-        <label><input type="checkbox" name="features" value="💌 Personalized love notes or messages"> 💌 Personalized love notes or messages</label>
-        <label><input type="checkbox" name="features" value="🧠 Compatibility quizzes"> 🧠 Compatibility quizzes</label>
-        <label><input type="checkbox" name="features" value="📷 Photo sharing or memory albums"> 📷 Photo sharing or memory albums</label>
-        <label><input type="checkbox" name="features" value="🕊️ Virtual gifts or gestures"> 🕊️ Virtual gifts or gestures</label>
-      </div>
+    <label>How often would you use the app?</label>
+    <select name="usage" required>
+      <option>Daily</option>
+      <option>Weekly</option>
+      <option>Occasionally</option>
+      <option>Only on special occasions</option>
+    </select>
 
-      <label>How important is customization?</label>
-      <select name="customization">
-        <option>Not important</option>
-        <option>Somewhat important</option>
-        <option>Very important</option>
-      </select>
+    <label>What features would you wish this app had?</label>
+    <textarea name="wish" placeholder="Your dream features..." required></textarea>
 
-      <!-- 🔐 Privacy & Safety -->
-      <label>How comfortable are you sharing personal feelings?</label>
-      <select name="comfort">
-        <option>Very comfortable</option>
-        <option>Somewhat comfortable</option>
-        <option>Not comfortable</option>
-      </select>
+    <label>Would you recommend this app to someone you love?</label><br>
+    <label><input type="radio" name="recommend" value="Yes" required> Yes</label>
+    <label><input type="radio" name="recommend" value="No"> No</label>
 
-      <label>Would you prefer your profile and messages to be:</label>
-      <select name="visibility">
-        <option>Public</option>
-        <option>Private</option>
-        <option>Visible only to selected users</option>
-      </select>
+    <label>Would you pay $1 to use this app?</label><br>
+    <label><input type="radio" name="pay" value="Yes" required> Yes</label>
+    <label><input type="radio" name="pay" value="No"> No</label>
 
-      <!-- Expression & Usage -->
-      <label>What’s your favorite way to express love?</label>
-      <select name="expression">
-        <option>Text messages</option>
-        <option>Voice notes</option>
-        <option>Visual art or animations</option>
-        <option>Music or poetry</option>
-      </select>
-
-      <label>How often would you use the app?</label>
-      <select name="usage">
-        <option>Daily</option>
-        <option>Weekly</option>
-        <option>Occasionally</option>
-        <option>Only on special occasions</option>
-      </select>
-
-      <label>What features would you wish this app had?</label>
-      <textarea name="wish" required></textarea>
-
-      <label>Would you recommend this app to someone you love?</label>
-      <label><input type="radio" name="recommend" value="Yes" required> Yes</label>
-      <label><input type="radio" name="recommend" value="No"> No</label>
-
-      <label>Would you pay $1 to use this app?</label>
-      <label><input type="radio" name="pay" value="Yes" required> Yes</label>
-      <label><input type="radio" name="pay" value="No"> No</label>
-
-      <button type="submit">Submit 💖</button>
-    </form>
-  </section>
-
-  <script src="script.js"></script>
+    <!-- 💌 Submit -->
+    <button type="submit">Submit 💖</button>
+  </form>
+</section>
 </body>
 </html>
